@@ -2,266 +2,223 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Dwiki Yulian - Web and Game Developer"
+    />
+    <title>Dwiki Yulian | Portfolio</title>
     <link rel="stylesheet" href="style.css" />
-    <title>Personal Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/8edded5622.js"
       crossorigin="anonymous"
+      defer
     ></script>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,200"
-    />
   </head>
   <body>
-    <header>
-      <div class="container">
-        <nav>
-          <h1>Dwiki Yulian</h1>
-          <ul id="sideMenu">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <i class="fa-solid fa-xmark exit" onclick="closeMenu()"></i>
+    <header class="hero">
+      <nav class="navbar">
+        <div class="container">
+          <h1 class="logo">Dwiki Yulian</h1>
+          <ul id="sideMenu" class="nav-links">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#services" class="nav-link">Services</a></li>
+            <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <i class="fa-solid fa-xmark nav-toggle" onclick="closeMenu()"></i>
           </ul>
-          <i class="fa-solid fa-bars" onclick="openMenu()"></i>
-        </nav>
-        <div class="flex-hero-page">
-          <div class="header-text">
-            <p>Web Developer | Game Developer</p>
-            <h1>
-              Hi I'm <span>Dwiki</span><br />
-              Yulian From Indonesia
-            </h1>
-          </div>
-          <!-- <div class="image">
-            <img src="/images/GLM_1568-removebg-preview.png" alt="" />
-          </div> -->
+          <i class="fa-solid fa-bars nav-toggle" onclick="openMenu()"></i>
+        </div>
+      </nav>
+      <div class="hero-content container">
+        <div class="hero-text">
+          <p class="subtitle">Web Developer | Game Developer</p>
+          <h1>Hi, I'm <span>Dwiki</span> Yulian<br />From Indonesia</h1>
+          <a href="#contact" class="btn btn-primary">Get in Touch</a>
+        </div>
+        <div class="hero-image">
+          <img
+            src="/images/GLM_1568-removebg-preview (4).png"
+            alt="Dwiki Yulian"
+          />
         </div>
       </div>
     </header>
-    <!-- --------about------- -->
-    <div id="about">
+
+    <section id="about" class="section">
       <div class="container">
-        <div class="row">
-          <div class="about-col-1">
-            <img src="images/GLM_1568-removebg-preview (4).png" alt="" />
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+          <div class="about-image">
+            <img
+              src="images/GLM_1568-removebg-preview (4).png"
+              alt="Dwiki Yulian"
+            />
           </div>
-          <div class="about-col-2">
-            <h1 class="sub-title">About Me</h1>
+          <div class="about-content">
             <p>
-              I am a passionate and creative game programmer and web developer
-              with a strong interest in creating immersive and engaging
-              experiences for players and users. I have experience in developing
-              games using Unity, and C#, as well as web applications using HTML,
-              CSS, and JavaScript. I am eager to learn new skills and
-              technologies, and to apply my knowledge and creativity to
-              challenging and rewarding tasks. I am looking for an intern
-              position where I can contribute to the development of high-quality
-              games and web products, while gaining valuable industry experience
-              and feedback.
+              I’m a passionate web and game developer with expertise in creating
+              immersive digital experiences. Skilled in Unity, C#, HTML, CSS,
+              JavaScript, and Flutter, I’m driven to build innovative solutions
+              and grow through challenging projects.
             </p>
-
-            <div class="tab-titles">
-              <p class="tab-links active-links" onclick="opentab('skills')">
-                Skills
-              </p>
-              <p class="tab-links" onclick="opentab('experience')">
-                Experience
-              </p>
-              <p class="tab-links" onclick="opentab('education')">Education</p>
-            </div>
-            <div class="tab-contents active-tab" id="skills">
-              <ul>
-                <li>
-                  <span>Web Development</span><br />Made Portfolio website
-                </li>
-                <li>
-                  <span>Game Development With Unity</span><br />
-                  Made a game with Unity Engine
-                </li>
-                <li>
-                  <span>Mobile App Development With Flutter</span><br />
-                  Made a mobile app with Flutter
-                </li>
-                <li>
-                  <span>Game Development With C#</span><br />
-                  Made a game with C#
-                </li>
-                <li>
-                  <span> Firebase</span><br />
-                  Backend development with firebase
-                </li>
-              </ul>
-            </div>
-
-            <div class="tab-contents" id="experience">
-              <ul>
-                <li>
-                  <span>Samsung Solve For Tomorrow 2024</span> <br />
-                  Made an ambitious project to modernize waste management
-                </li>
-              </ul>
-            </div>
-            <div class="tab-contents" id="education">
-              <ul>
-                <li>
-                  <span>2023 - 2027</span><br />Computer Science From Binus
-                  University
-                </li>
-              </ul>
+            <div class="tabs">
+              <div class="tab-titles">
+                <button class="tab-link active" data-tab="skills">
+                  Skills
+                </button>
+                <button class="tab-link" data-tab="experience">
+                  Experience
+                </button>
+                <button class="tab-link" data-tab="education">Education</button>
+              </div>
+              <div class="tab-content active" id="skills">
+                <ul>
+                  <li><span>Web Development</span> - Portfolio Website</li>
+                  <li><span>Game Development</span> - Unity & C# Projects</li>
+                  <li><span>Mobile Apps</span> - Flutter Development</li>
+                  <li><span>Backend</span> - Firebase Integration</li>
+                </ul>
+              </div>
+              <div class="tab-content" id="experience">
+                <ul>
+                  <li>
+                    <span>Samsung Solve For Tomorrow 2024</span> - Waste
+                    Management Project
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-content" id="education">
+                <ul>
+                  <li>
+                    <span>2023 - 2027</span> - Computer Science, Binus
+                    University
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- ------services----- -->
-    <div id="services">
+    </section>
+
+    <section id="services" class="section">
       <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-          <div>
-            <i class="fa-sharp fa-solid fa-code"></i>
-            <h2>Web Developer</h2>
+        <h2 class="section-title">My Services</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <i class="fa-solid fa-code"></i>
+            <h3>Web Development</h3>
             <p>
-              A web developer is a professional who designs, builds, and
-              maintains websites and web applications. Web developers use
-              various programming languages, frameworks, and tools to create
-              user-friendly and interactive web pages.
+              Building responsive, user-friendly websites using modern
+              technologies.
             </p>
           </div>
-          <div>
+          <div class="service-card">
             <i class="fa-solid fa-gamepad"></i>
-            <h2>Indie Game Developer</h2>
+            <h3>Game Development</h3>
             <p>
-              A game developer is someone who creates video games using various
-              skills and tools. Game developers can work on different aspects of
-              game development, such as visuals, artificial intelligence, user
-              interface, and game logic.
+              Creating engaging games with Unity and C# for various platforms.
             </p>
           </div>
         </div>
       </div>
-    </div>
-    <!-- ------Portfolio------- -->
-    <div id="portfolio">
+    </section>
+
+    <section id="portfolio" class="section">
       <div class="container">
-        <h1 class="sub-title">My Work</h1>
-        <div class="work-list">
-          <div class="work">
-            <img src="/images/Unity-Project(1).png" alt="" />
-            <div class="layer">
+        <h2 class="section-title">My Work</h2>
+        <div class="portfolio-grid">
+          <div class="portfolio-item">
+            <img src="/images/Unity-Project(1).png" alt="Project Brick" />
+            <div class="overlay">
               <h3>Project Brick</h3>
               <p>My Indie Game Project</p>
             </div>
           </div>
-          <div class="work">
-            <img src="/images/Unity-Project(2).png" alt="" />
-            <div class="layer">
+          <div class="portfolio-item">
+            <img src="/images/Unity-Project(2).png" alt="Project Brick" />
+            <div class="overlay">
               <h3>Project Brick</h3>
               <p>My Indie Game Project</p>
             </div>
           </div>
-          <div class="work">
-            <img src="/images/Unity-Project(4).png" alt="" />
-            <div class="layer">
+          <div class="portfolio-item">
+            <img src="/images/Unity-Project(4).png" alt="Project Brick" />
+            <div class="overlay">
               <h3>Project Brick</h3>
               <p>My Indie Game Project</p>
             </div>
           </div>
         </div>
-        <a href="#" class="btn">See More</a>
+        <a href="#" class="btn btn-primary">See More</a>
       </div>
-    </div>
-    <!-- -------Contact------- -->
-    <div id="contact">
+    </section>
+
+    <section id="contact" class="section">
       <div class="container">
-        <div class="row">
-          <div class="contact-left">
-            <h1 class="sub-title">Contact Me</h1>
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-grid">
+          <div class="contact-info">
             <p>
-              <i class="fa-regular fa-paper-plane"></i>dwikiyulian7@gmail.com
+              <i class="fa-regular fa-paper-plane"></i> dwikiyulian7@gmail.com
             </p>
-            <p>
-              <span class="material-symbols-outlined">call</span>+6282132453037
-            </p>
-            <div class="social-icons">
-              <a href="https://www.linkedin.com/in/dwikiyulian-0394b8216/"
-                ><i class="fa-brands fa-linkedin"></i>
-              </a>
-              <a href="https://github.com/qjvxvl"
-                ><i class="fa-brands fa-github"></i>
-              </a>
-              <a href="https://stackoverflow.com/users/16150563/dwiki-y"
-                ><i class="fa-brands fa-stack-overflow"></i>
-              </a>
+            <p><i class="fa-solid fa-phone"></i> +6282132453037</p>
+            <div class="social-links">
+              <a
+                href="https://www.linkedin.com/in/dwikiyulian-0394b8216/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/qjvxvl" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                href="https://stackoverflow.com/users/16150563/dwiki-y"
+                target="_blank"
+                ><i class="fa-brands fa-stack-overflow"></i
+              ></a>
             </div>
             <a
               href="images/Dwiki Yulian Game Dev CV.pdf"
               download
-              class="btn btn2"
+              class="btn btn-secondary"
               >Download CV</a
             >
           </div>
-          <div class="contact-right">
-            <section id="contact">
-              <form name="submit-to-google-sheet">
-                <label for="name">Name:</label>
-                <input
-                  type="text"
-                  id="name"
-                  placeholder="Your Name"
-                  name="Name"
-                  required
-                />
-
-                <label for="email">Email:</label>
-                <input
-                  type="email"
-                  id="email"
-                  placeholder="Email"
-                  name="Email"
-                  required
-                />
-
-                <label for="message">Message:</label>
-                <textarea
-                  id="message"
-                  placeholder="Your Message"
-                  name="Message"
-                ></textarea>
-
-                <input type="submit" value="Send" class="btn btn2" />
-              </form>
-              <span id="msg"></span>
-            </section>
-          </div>
+          <form name="submit-to-google-sheet" class="contact-form">
+            <input type="text" name="Name" placeholder="Your Name" required />
+            <input
+              type="email"
+              name="Email"
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              name="Message"
+              placeholder="Your Message"
+              required
+            ></textarea>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <span id="msg"></span>
+          </form>
         </div>
       </div>
-      <footer class="copyright">
-        <p>
-          Copyright &copy; Dwiki Yulian. Made With
-          <i class="fa-solid fa-heart"></i> by Dwiki Yulian.
-        </p>
-      </footer>
-    </div>
+    </section>
 
-    <script src="index2.js"></script>
-    <!-- <script>
-      const scriptURL =
-        "https://script.google.com/macros/s/AKfycbz6LUgSIFzNy7U8sJZkgnw2A3UGx94yrdk1vSLT_euOpOeieYTtwWiQRBrKssU-NDxQHA/exec";
-      const form = document.forms["submit-to-google-sheet"];
+    <footer>
+      <p>
+        &copy; 2025 Dwiki Yulian. Made with <i class="fa-solid fa-heart"></i>
+      </p>
+    </footer>
 
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => console.log("Success!", response))
-          .catch((error) => console.error("Error!", error.message));
-      });
-    </script> -->
+    <script src="script.js"></script>
   </body>
 </html>
